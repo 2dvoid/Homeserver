@@ -1,0 +1,14 @@
+[Unit]
+Description=Sync Homeserver
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/bin/sync-homeserver.sh
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=sync-homeserver
+
+[Install]
+WantedBy=multi-user.target
