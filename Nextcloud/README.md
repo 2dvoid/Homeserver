@@ -27,7 +27,7 @@
 
 ### Nextcloud Data Backup:
 
-1. Download the [sync-nextcloud.sh](./sync-nextcloud.sh) script.
+1. Download the [sync-nextcloud.sh](./sync-nextcloud.sh) script to PC.
 2. Install Rsync and set up SSH key-based login from the root account, logging in once for authentication.
 3. Modify the information in the script according to your configuration.
 4. Move the script to the /bin directory and grant execute permissions
