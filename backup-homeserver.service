@@ -1,0 +1,14 @@
+[Unit]
+Description=Backup Homeserver
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/bin/backup-homeserver.sh
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=backup-homeserver
+
+[Install]
+WantedBy=multi-user.target
